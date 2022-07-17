@@ -1,0 +1,80 @@
+*,::before,::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:$headerHeight 0 0 0 ;
+    font-family: $bodyFont!important;
+    font-size: $normalFontSize;
+    background-color: $bodyColor;
+    color: $textColor;
+    transition:  .6s;
+    -webkit-transition:  .6s;
+    -moz-transition:  .6s;
+    -ms-transition:  .6s;
+    -o-transition:  .6s;
+}
+main{
+    width: 95%;
+    margin: auto;
+}
+main section{
+    padding: 0 15px;
+}
+.section{
+    padding: 4.5rem 0 1rem;
+     &Title,&TitleCenter {
+     font-size: $h2FontSize!important;
+     color: $titleColor!important;
+     text-align: center;
+     margin-bottom: $mb-1;
+    }
+} ////26323
+.svg{
+    //color:
+ &Blob {
+    fill: $mainColorLight;
+  }
+  &Color {
+  fill: $mainColor!important;
+ }
+   
+  &Img{
+    justify-self: center;
+  }
+}
+
+/*layout*/
+.container {
+    max-width: 968;
+    margin-left:$mb-1-5;
+    margin-left: $mb-1-5;
+    padding: 10px;
+    margin: 1rem 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+p{
+    font-size: 16px;
+    color: $textColor;
+    font-family: initial;
+    font-weight: 500;
+}
+h3{
+    color:$titleColor;
+}
+.homeData,.aboutData,.contactData,.securityData,.appData,.servicesData{
+    margin: auto;
+}

@@ -1,0 +1,16 @@
+/*security*/
+.security{
+    &Container{
+        row-gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    &Title{
+        font-size: $biggestFontSize;
+        font-weight: $fontBold;
+        margin-bottom: $mb-0-75;
+    }
+    
+    &Data{
+        text-align: center;
+    }
+}
