@@ -1,0 +1,86 @@
+/*footer*/
+.footer {
+  background-color: $mainColorLighten;
+  padding: 1rem;
+  margin: 0 !important;
+
+  &Container {
+    column-gap: 2rem;
+  }
+
+  &Logo,
+  &Title {
+    font-size: $h3FontSize;
+    margin-bottom: $mb-0-75;
+  }
+
+  &Logo {
+    font-size: $h2FontSize !important;
+    display: inline-block;
+    font-weight: $fontSemiBold;
+    color: $titleColor;
+  }
+
+  &Description,
+  &Logo {
+    font-size: $smallFontSize;
+  }
+
+  &Links {
+    display: grid;
+    row-gap: .5rem;
+  }
+
+  &Link {
+    color: $textColor;
+    font-size: $smallFontSize;
+  }
+
+  .footerSocial {
+    display: flex;
+    column-gap: 1.5rem;
+
+    .footerLink {
+      font-size: 1.5rem;
+      color: $titleColor;
+     
+    }
+
+    .footerLink .bxl-facebook-circle:hover {
+      color: #1877f2;
+      transition: .2s;
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -ms-transition: .2s;
+      -o-transition: .2s;
+}
+
+    .footerLink .bxl-twitter:hover {
+      color: #1da1f2;
+      transition: .2s;
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -ms-transition: .2s;
+      -o-transition: .2s;
+    }
+
+    .footerLink .bxl-instagram-alt:hover {
+      color: #c32aa3;
+      transition: .2s;
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -ms-transition: .2s;
+      -o-transition: .2s;
+    }
+
+    &Copy {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+p.footerCopy {
+  font-size: .9rem;
+  color: $textColor;
+  text-align: center;
+}

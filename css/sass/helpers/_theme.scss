@@ -1,0 +1,133 @@
+/*theme*/
+// variables
+
+
+.change-theme {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+body.dark-theme {
+  $mainColorLight: hsl($hue, $sat, 75%) !important;
+  $titleColor: hsl($hue, 4%, 95%);
+  $textColor: hsl($hue, 4%, 80%);
+  $bodyColor: hsl($hue, 8%, 13%) !important;
+  $containerColor: hsl($hue, 8%, 16%);
+  background-color: $bodyColor;
+  color: $textColor;
+
+  .section {
+
+    &Title,
+    &TitleCenter {
+      color: $titleColor  !important;
+    }
+  }
+
+  //
+  .svg {
+    &Blob {
+      fill: $mainColorLight;
+    }
+
+    &Color {
+      fill: $mainColor !important;
+    }
+  }
+
+  p {
+    color: $textColor;
+  }
+
+  h3 {
+    color: $titleColor;
+  }
+
+  //
+  /*button*/
+  .button {
+    background-color: $mainColor;
+    &:hover {
+      background-color: $mainColorAlt
+    }
+
+    &Link {
+      padding: 15px!important
+    }
+  }
+
+  //header
+  .header {
+    background-color: $bodyColor;
+
+    .nav {
+      &Menu {
+        @media screen and (max-width:767px) {
+          background-color: $containerColor ;
+        }
+      }
+
+      &Link,
+      &Logo,
+      &Toggle {
+        color: $titleColor;
+      }
+    }
+
+    /*active links*/
+    .activeLink {
+      &::before {
+        background-color: $titleColor;
+      }
+    }
+  }
+
+  //contact
+  .contact {
+    &Address {
+      color: $titleColor;
+    }
+
+    &Information {
+      color: $textColor ;
+    }
+  }
+
+  //services
+  .services {
+    &Data {
+      background-color: $containerColor;
+    }
+  }
+
+  // footer
+  .footer {
+    background-color: $containerColor;
+
+    &Logo {
+      color: $titleColor;
+    }
+
+    &Link {
+      color: $textColor;
+    }
+
+    .footerSocial {
+      .footerLink {
+        color: $titleColor;
+      }
+    }
+
+    p.footerCopy {
+      color: $textColor;
+    }
+  }
+}
+
+.dark-theme {
+  color: hsl(45deg, 0%, 100%) !important;
+  background-color: hsl(45deg, 4%, 35%) !important;
+}
